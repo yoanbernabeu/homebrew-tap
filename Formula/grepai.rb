@@ -5,21 +5,21 @@
 class Grepai < Formula
   desc "Privacy-first semantic code search CLI"
   homepage "https://github.com/yoanbernabeu/grepai"
-  version "0.32.0"
+  version "0.32.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.0/grepai_0.32.0_darwin_amd64.tar.gz"
-      sha256 "6aca23ef8d0cfb9679214ad696b96999c66ab596bb15c44fc41f21c7d85cfb9f"
+      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.1/grepai_0.32.1_darwin_amd64.tar.gz"
+      sha256 "fb8b4baad56a268dc755ce59ecb74382f00c730a3493bd3409b346f4489bc58d"
 
       def install
         bin.install "grepai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.0/grepai_0.32.0_darwin_arm64.tar.gz"
-      sha256 "c16c796e1c0a6f43e226ed7bc7e321ce450c4252d058a869cd14de5017352a37"
+      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.1/grepai_0.32.1_darwin_arm64.tar.gz"
+      sha256 "957658f063fe48e7395578ba2022f5ff270b27aa73a26e9d48ff251dd82789d7"
 
       def install
         bin.install "grepai"
@@ -29,15 +29,15 @@ class Grepai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.0/grepai_0.32.0_linux_amd64.tar.gz"
-      sha256 "12124049d720c433ad342b34e0b10ba6c1d4f13fb2bcfadc19c9a71e3ba5aed2"
+      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.1/grepai_0.32.1_linux_amd64.tar.gz"
+      sha256 "074fbba139e08016da5310a24c4d512c893b428d28b7b9ee26e7c83eb244280a"
       def install
         bin.install "grepai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.0/grepai_0.32.0_linux_arm64.tar.gz"
-      sha256 "b444905391bcd3b07dfff1c2b28637df0a5e626b61e7f53e7426370b0632ae20"
+      url "https://github.com/yoanbernabeu/grepai/releases/download/v0.32.1/grepai_0.32.1_linux_arm64.tar.gz"
+      sha256 "e8d338454fd073bcb0bfc6b4605d8f7574fcc25fbd57f017b9b08050d82de4a2"
       def install
         bin.install "grepai"
       end

@@ -5,21 +5,21 @@
 class Frankendeploy < Formula
   desc "CLI to deploy Symfony applications with FrankenPHP"
   homepage "https://github.com/yoanbernabeu/frankendeploy"
-  version "0.16.1"
+  version "0.16.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.1/frankendeploy_0.16.1_darwin_amd64.tar.gz"
-      sha256 "28292ae47fe07e763d9fbdd9d67150452d58ab247e06948db3932dba75c26e12"
+      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.2/frankendeploy_0.16.2_darwin_amd64.tar.gz"
+      sha256 "80eb1ba20e9af4611b4ffc6a8f8cef25f71d39d20889509f4f391361f7c5d0bc"
 
       define_method(:install) do
         bin.install "frankendeploy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.1/frankendeploy_0.16.1_darwin_arm64.tar.gz"
-      sha256 "2f94e1a7ad7a0266cc3d2fb1fe62c7d34adcc469090daa41634c4e38e5e7541f"
+      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.2/frankendeploy_0.16.2_darwin_arm64.tar.gz"
+      sha256 "ee7238595b95c59b0625162cf11cd2cced77a0e1e20fbfce076b140d51ac21a5"
 
       define_method(:install) do
         bin.install "frankendeploy"
@@ -29,15 +29,15 @@ class Frankendeploy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.1/frankendeploy_0.16.1_linux_amd64.tar.gz"
-      sha256 "74074de3c8ce2b26a1c946f3cae018d373fb9437a644492e1e59f79483cf9adc"
+      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.2/frankendeploy_0.16.2_linux_amd64.tar.gz"
+      sha256 "e2242f1e69c29b67f48a98249f96b7987e12b3f8c4a3c13ac247c2c0ad39468a"
       define_method(:install) do
         bin.install "frankendeploy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.1/frankendeploy_0.16.1_linux_arm64.tar.gz"
-      sha256 "ea9945c6a9932b876bbae37c5960c30a92e6ff6603ab603b76d220c300012c81"
+      url "https://github.com/yoanbernabeu/frankendeploy/releases/download/v0.16.2/frankendeploy_0.16.2_linux_arm64.tar.gz"
+      sha256 "0ceedbcdc9c041a99647d21ceeb2394c50f81c6f9e0f5585cc02acfa2950fb64"
       define_method(:install) do
         bin.install "frankendeploy"
       end

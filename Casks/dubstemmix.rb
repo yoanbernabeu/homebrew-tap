@@ -1,6 +1,6 @@
 cask "dubstemmix" do
-  version "0.12.0"
-  sha256 "d8989db201ff99c1d195ad0dde9d51cb51925733324dcefc438a56f2111b2e84"
+  version "0.13.0"
+  sha256 "450eb8a175da7b539271d475064a981505fb398ab006573cbb319d05c455337b"
 
   url "https://github.com/yoanbernabeu/DubStemMix/releases/download/v#{version}/DubStemMix-#{version}.zip"
   name "DubStemMix"

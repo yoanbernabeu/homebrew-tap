@@ -5,23 +5,23 @@
 class Skillcrew < Formula
   desc "Distribute and govern AI agent skills across your team, in every agent"
   homepage "https://github.com/yoanbernabeu/skillcrew"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.2.0/skillcrew_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c220e84846335d638fc96dc5744bb6aa1cd7573acaa2d9d67bbc133b7a1a4aa3"
+      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.3.0/skillcrew_0.3.0_darwin_amd64.tar.gz"
+      sha256 "e246a855de2731a99cc66483cca9f9cb3483d4020823a68877515e9f017aec7a"
 
       define_method(:install) do
         bin.install "skillcrew"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.2.0/skillcrew_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3660ce02e7fbc1f773e48b115174eebae9e6b7ee51bbb54704d9c5dbdfa75008"
+      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.3.0/skillcrew_0.3.0_darwin_arm64.tar.gz"
+      sha256 "42d132265dbfaba849417290d4867a92604d95325482004bfe0fd277c83b82bd"
 
       define_method(:install) do
         bin.install "skillcrew"
@@ -31,15 +31,15 @@ class Skillcrew < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.2.0/skillcrew_0.2.0_linux_amd64.tar.gz"
-      sha256 "de1cf14bb06d97f7d76b0924771ed042cb701a6744cd03c66a704537768f0a4f"
+      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.3.0/skillcrew_0.3.0_linux_amd64.tar.gz"
+      sha256 "d542cf9bb99437b4dc10f7dc775b72af3599d1241852317c891ff544fc84b135"
       define_method(:install) do
         bin.install "skillcrew"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.2.0/skillcrew_0.2.0_linux_arm64.tar.gz"
-      sha256 "b2d62fc019161522c4324dfff6636efd03a654cf4a0bf2ee02606b77d45462a0"
+      url "https://github.com/yoanbernabeu/skillcrew/releases/download/v0.3.0/skillcrew_0.3.0_linux_arm64.tar.gz"
+      sha256 "321cd3310e92cb3b94f7fc9274f1f55fe1a99b742235cbfb17c2975793cb479f"
       define_method(:install) do
         bin.install "skillcrew"
       end
